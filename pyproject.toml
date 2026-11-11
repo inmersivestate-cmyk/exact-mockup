@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exact-mockup"
+version = "0.1.0"
+description = "Put real pages and covers into AI-generated mockups, with exact text."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["opencv-python-headless>=4.8", "numpy>=1.24", "scipy>=1.10"]
+keywords = ["mockup", "chroma key", "green screen", "ebook", "ai image", "book cover"]
+
+[project.scripts]
+exact-mockup = "exact_mockup.cli:main"
+
+[tool.setuptools]
+packages = ["exact_mockup"]

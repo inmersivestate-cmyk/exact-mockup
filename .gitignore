@@ -1,0 +1,8 @@
+__pycache__/
+*.egg-info/
+.venv/
+build/
+dist/
+examples/demo/*
+!examples/demo/pages_before_after.jpg
+!examples/demo/cover_before_after.jpg
